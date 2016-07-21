@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WYCMainViewController.h
 //  TotalTest
 //
 //  Created by genilex3 on 16/7/20.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STChildViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface WYCMainViewController : STChildViewController
 
 @end
-
