@@ -7,6 +7,7 @@
 //
 
 #import "WYCThirdViewController.h"
+#import "WYCRightBayViewController.h"
 
 @interface WYCThirdViewController ()
 
@@ -20,6 +21,18 @@
     
     [self setNavBarTitle:@"我的"];
     [self setNavBarLeftBtn:nil];
+    
+    [self setNavBarRightBtn:[STNavBarView createNormalNaviBarBtnByTitle:@"其他" target:self action:@selector(OtherView:)]];
+    
+}
+-(void)OtherView:(id)sender{
+    UIStoryboard *rightSb = [UIStoryboard storyboardWithName:@"WYCRightBayViewController" bundle:nil];
+    WYCRightBayViewController *rightVC = [rightSb instantiateInitialViewController];
+    rightVC.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:rightVC animated:YES];
+    
+//    [self presentViewController:rightVC animated:YES completion:nil];
     
 }
 

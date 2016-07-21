@@ -13,6 +13,9 @@
 		23609D291D406D4800FA85F2 /* STTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D241D406D4800FA85F2 /* STTabBarController.m */; };
 		23609D2E1D40A42100FA85F2 /* WYCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D2D1D40A42100FA85F2 /* WYCSecondViewController.m */; };
 		23609D311D40A42D00FA85F2 /* WYCThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D301D40A42D00FA85F2 /* WYCThirdViewController.m */; };
+		23609D341D40A97500FA85F2 /* WYCRightBayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D331D40A97500FA85F2 /* WYCRightBayViewController.m */; };
+		23609D361D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23609D351D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard */; };
+		23609D3A1D40B77100FA85F2 /* WYCAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D391D40B77100FA85F2 /* WYCAdvert.m */; };
 		23905BD81D3F148C0013C227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23905BD71D3F148C0013C227 /* main.m */; };
 		23905BDB1D3F148C0013C227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23905BDA1D3F148C0013C227 /* AppDelegate.m */; };
 		23905BE11D3F148C0013C227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23905BDF1D3F148C0013C227 /* Main.storyboard */; };
@@ -54,6 +57,11 @@
 		23609D2D1D40A42100FA85F2 /* WYCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCSecondViewController.m; sourceTree = "<group>"; };
 		23609D2F1D40A42D00FA85F2 /* WYCThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCThirdViewController.h; sourceTree = "<group>"; };
 		23609D301D40A42D00FA85F2 /* WYCThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCThirdViewController.m; sourceTree = "<group>"; };
+		23609D321D40A97500FA85F2 /* WYCRightBayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCRightBayViewController.h; sourceTree = "<group>"; };
+		23609D331D40A97500FA85F2 /* WYCRightBayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCRightBayViewController.m; sourceTree = "<group>"; };
+		23609D351D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WYCRightBayViewController.storyboard; sourceTree = "<group>"; };
+		23609D381D40B77100FA85F2 /* WYCAdvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCAdvert.h; sourceTree = "<group>"; };
+		23609D391D40B77100FA85F2 /* WYCAdvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCAdvert.m; sourceTree = "<group>"; };
 		23905BD31D3F148C0013C227 /* TotalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905BD71D3F148C0013C227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23905BD91D3F148C0013C227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,8 +151,18 @@
 			children = (
 				23609D2F1D40A42D00FA85F2 /* WYCThirdViewController.h */,
 				23609D301D40A42D00FA85F2 /* WYCThirdViewController.m */,
+				2395E1511D3F1B2F00A5D56A /* PhotoLis */,
 			);
 			name = ThirdController;
+			sourceTree = "<group>";
+		};
+		23609D371D40B73800FA85F2 /* SetAdvert */ = {
+			isa = PBXGroup;
+			children = (
+				23609D381D40B77100FA85F2 /* WYCAdvert.h */,
+				23609D391D40B77100FA85F2 /* WYCAdvert.m */,
+			);
+			name = SetAdvert;
 			sourceTree = "<group>";
 		};
 		23905BCA1D3F148C0013C227 = {
@@ -170,10 +188,10 @@
 		23905BD51D3F148C0013C227 /* TotalTest */ = {
 			isa = PBXGroup;
 			children = (
+				23609D371D40B73800FA85F2 /* SetAdvert */,
 				23609D2B1D40A3B400FA85F2 /* ThirdController */,
 				23609D2A1D40A35500FA85F2 /* SecondController */,
 				23609D1A1D406D3400FA85F2 /* Tools */,
-				2395E1511D3F1B2F00A5D56A /* PhotoLis */,
 				2395E1501D3F1A7E00A5D56A /* Main */,
 				23905BD91D3F148C0013C227 /* AppDelegate.h */,
 				23905BDA1D3F148C0013C227 /* AppDelegate.m */,
@@ -224,6 +242,9 @@
 		2395E1511D3F1B2F00A5D56A /* PhotoLis */ = {
 			isa = PBXGroup;
 			children = (
+				23609D321D40A97500FA85F2 /* WYCRightBayViewController.h */,
+				23609D331D40A97500FA85F2 /* WYCRightBayViewController.m */,
+				23609D351D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard */,
 			);
 			name = PhotoLis;
 			sourceTree = "<group>";
@@ -335,6 +356,7 @@
 				23905BE61D3F148C0013C227 /* LaunchScreen.storyboard in Resources */,
 				23905BE31D3F148C0013C227 /* Assets.xcassets in Resources */,
 				23905BE11D3F148C0013C227 /* Main.storyboard in Resources */,
+				23609D361D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23609D3A1D40B77100FA85F2 /* WYCAdvert.m in Sources */,
 				23609D261D406D4800FA85F2 /* STChildViewController.m in Sources */,
 				23905BDB1D3F148C0013C227 /* AppDelegate.m in Sources */,
 				23609D2E1D40A42100FA85F2 /* WYCSecondViewController.m in Sources */,
@@ -367,6 +390,7 @@
 				23609D291D406D4800FA85F2 /* STTabBarController.m in Sources */,
 				23609D311D40A42D00FA85F2 /* WYCThirdViewController.m in Sources */,
 				23609D281D406D4800FA85F2 /* STNavigationController.m in Sources */,
+				23609D341D40A97500FA85F2 /* WYCRightBayViewController.m in Sources */,
 				23905BD81D3F148C0013C227 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
