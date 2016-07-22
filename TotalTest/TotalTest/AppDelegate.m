@@ -8,6 +8,16 @@
 
 #import "AppDelegate.h"
 #import "WYCAdvert.h"
+
+
+#import "WYCMainViewController.h"
+#import "WYCThirdViewController.h"
+#import "WYCSecondViewController.h"
+
+#import "MCLeftSlideViewController.h"
+#import "MCLeftSlideViewController.h"
+#import "MCLeftSortsViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -26,7 +36,12 @@
         self.tabBarController = [[STTabBarController alloc]init];
         self.tabBarController.delegate = (id)self;
     }
-    [self.window setRootViewController:self.tabBarController];
+//    [self.window setRootViewController:self.tabBarController];
+    
+    
+    [self setLeft];
+//    [self.window setRootViewController:self.tabBarController];
+    
     
     [self.window makeKeyAndVisible];
     
@@ -34,6 +49,30 @@
     
     return YES;
 }
+
+-(void)setLeft{
+    WYCMainViewController *firstVC = [[WYCMainViewController alloc] init];
+    UINavigationController *firstNav = [[UINavigationController alloc] initWithRootViewController:firstVC];
+    firstNav.tabBarItem.image = [UIImage imageNamed:@"tab_buddy_nor"];
+    firstVC.title = @"首页";
+    firstVC.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    
+    
+    WYCSecondViewController *secondVC = [[WYCSecondViewController alloc] init];
+    UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:secondVC];
+    secondNav.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
+    secondVC.title = @"设置";
+    
+//    UITabBarController *tabVC = [[UITabBarController alloc] init];
+//    [tabVC setViewControllers:@[firstNav,secondNav]];
+//    tabVC.tabBar.tintColor = [UIColor orangeColor];
+    
+    MCLeftSortsViewController *leftVC = [[MCLeftSortsViewController alloc] init];
+    MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.tabBarController];
+    self.window.rootViewController = rootVC;
+    
+}
+
 
 /**
  *  设置启动图片

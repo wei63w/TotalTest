@@ -16,6 +16,11 @@
 		23609D341D40A97500FA85F2 /* WYCRightBayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D331D40A97500FA85F2 /* WYCRightBayViewController.m */; };
 		23609D361D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23609D351D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard */; };
 		23609D3A1D40B77100FA85F2 /* WYCAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D391D40B77100FA85F2 /* WYCAdvert.m */; };
+		23609D441D42203900FA85F2 /* MCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D3D1D42203900FA85F2 /* MCContent.m */; };
+		23609D451D42203900FA85F2 /* MCLeftSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D3F1D42203900FA85F2 /* MCLeftSliderManager.m */; };
+		23609D461D42203900FA85F2 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D411D42203900FA85F2 /* MCLeftSlideViewController.m */; };
+		23609D471D42203900FA85F2 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D431D42203900FA85F2 /* UIView_extra.m */; };
+		23609D4D1D42253000FA85F2 /* MCLeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D4C1D42253000FA85F2 /* MCLeftSortsViewController.m */; };
 		23905BD81D3F148C0013C227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23905BD71D3F148C0013C227 /* main.m */; };
 		23905BDB1D3F148C0013C227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23905BDA1D3F148C0013C227 /* AppDelegate.m */; };
 		23905BE11D3F148C0013C227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23905BDF1D3F148C0013C227 /* Main.storyboard */; };
@@ -62,6 +67,17 @@
 		23609D351D40A9CB00FA85F2 /* WYCRightBayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WYCRightBayViewController.storyboard; sourceTree = "<group>"; };
 		23609D381D40B77100FA85F2 /* WYCAdvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCAdvert.h; sourceTree = "<group>"; };
 		23609D391D40B77100FA85F2 /* WYCAdvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCAdvert.m; sourceTree = "<group>"; };
+		23609D3C1D42203900FA85F2 /* MCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCContent.h; sourceTree = "<group>"; };
+		23609D3D1D42203900FA85F2 /* MCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCContent.m; sourceTree = "<group>"; };
+		23609D3E1D42203900FA85F2 /* MCLeftSliderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSliderManager.h; sourceTree = "<group>"; };
+		23609D3F1D42203900FA85F2 /* MCLeftSliderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSliderManager.m; sourceTree = "<group>"; };
+		23609D401D42203900FA85F2 /* MCLeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSlideViewController.h; sourceTree = "<group>"; };
+		23609D411D42203900FA85F2 /* MCLeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSlideViewController.m; sourceTree = "<group>"; };
+		23609D421D42203900FA85F2 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		23609D431D42203900FA85F2 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		23609D4A1D4222A100FA85F2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		23609D4B1D42253000FA85F2 /* MCLeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSortsViewController.h; sourceTree = "<group>"; };
+		23609D4C1D42253000FA85F2 /* MCLeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSortsViewController.m; sourceTree = "<group>"; };
 		23905BD31D3F148C0013C227 /* TotalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905BD71D3F148C0013C227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23905BD91D3F148C0013C227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +124,7 @@
 		23609D1A1D406D3400FA85F2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				23609D3B1D42203900FA85F2 /* LeftSlideViewController */,
 				23609D1B1D406D4800FA85F2 /* tabbar */,
 			);
 			name = Tools;
@@ -165,6 +182,31 @@
 			name = SetAdvert;
 			sourceTree = "<group>";
 		};
+		23609D3B1D42203900FA85F2 /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				23609D4B1D42253000FA85F2 /* MCLeftSortsViewController.h */,
+				23609D4C1D42253000FA85F2 /* MCLeftSortsViewController.m */,
+				23609D3C1D42203900FA85F2 /* MCContent.h */,
+				23609D3D1D42203900FA85F2 /* MCContent.m */,
+				23609D3E1D42203900FA85F2 /* MCLeftSliderManager.h */,
+				23609D3F1D42203900FA85F2 /* MCLeftSliderManager.m */,
+				23609D401D42203900FA85F2 /* MCLeftSlideViewController.h */,
+				23609D411D42203900FA85F2 /* MCLeftSlideViewController.m */,
+				23609D421D42203900FA85F2 /* UIView_extra.h */,
+				23609D431D42203900FA85F2 /* UIView_extra.m */,
+			);
+			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		23609D481D4221EF00FA85F2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23609D4A1D4222A100FA85F2 /* PrefixHeader.pch */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		23905BCA1D3F148C0013C227 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +230,7 @@
 		23905BD51D3F148C0013C227 /* TotalTest */ = {
 			isa = PBXGroup;
 			children = (
+				23609D481D4221EF00FA85F2 /* Common */,
 				23609D371D40B73800FA85F2 /* SetAdvert */,
 				23609D2B1D40A3B400FA85F2 /* ThirdController */,
 				23609D2A1D40A35500FA85F2 /* SecondController */,
@@ -381,15 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23609D471D42203900FA85F2 /* UIView_extra.m in Sources */,
 				23609D3A1D40B77100FA85F2 /* WYCAdvert.m in Sources */,
 				23609D261D406D4800FA85F2 /* STChildViewController.m in Sources */,
 				23905BDB1D3F148C0013C227 /* AppDelegate.m in Sources */,
+				23609D451D42203900FA85F2 /* MCLeftSliderManager.m in Sources */,
 				23609D2E1D40A42100FA85F2 /* WYCSecondViewController.m in Sources */,
 				2395E1541D3F1D4D00A5D56A /* WYCMainViewController.m in Sources */,
+				23609D441D42203900FA85F2 /* MCContent.m in Sources */,
 				23609D271D406D4800FA85F2 /* STNavBarView.m in Sources */,
 				23609D291D406D4800FA85F2 /* STTabBarController.m in Sources */,
 				23609D311D40A42D00FA85F2 /* WYCThirdViewController.m in Sources */,
+				23609D4D1D42253000FA85F2 /* MCLeftSortsViewController.m in Sources */,
 				23609D281D406D4800FA85F2 /* STNavigationController.m in Sources */,
+				23609D461D42203900FA85F2 /* MCLeftSlideViewController.m in Sources */,
 				23609D341D40A97500FA85F2 /* WYCRightBayViewController.m in Sources */,
 				23905BD81D3F148C0013C227 /* main.m in Sources */,
 			);
@@ -536,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TotalTest/PrefixHeader.pch";
 				INFOPLIST_FILE = TotalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-21.TotalTest";
@@ -547,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TotalTest/PrefixHeader.pch";
 				INFOPLIST_FILE = TotalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-21.TotalTest";
