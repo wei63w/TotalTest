@@ -8,48 +8,129 @@
 
 #import "WYCMainViewController.h"
 
+#import "STNavBarView.h"
 
-
-@interface WYCMainViewController ()
+@interface WYCMainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
-@implementation WYCMainViewController
+@implementation WYCMainViewController{
+    UITableView *leftTableView;
+    UITableView *rightTableView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"主页" forState:UIControlStateNormal];
-    btn.titleLabel.textColor = [UIColor whiteColor];
-    [btn setBackgroundColor:[UIColor blueColor]];
     
-    [self.view addSubview:btn];
+    UIImage *img = [self reSizeImage:[UIImage imageNamed:@"bkg"] toSize:[UIScreen mainScreen].bounds.size];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:img]];
+    
+
+    
+    STNavBarView *navbar = [[STNavBarView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [STNavBarView barSize].width, [STNavBarView barSize].height)];
+    [navbar setBackgroundColor:[UIColor whiteColor]];
+    [navbar setLeftBtn:  nil];
+    [navbar setTitle:@"首页"];
+    [self.view addSubview:navbar];
+    
+//    [self setNavBarTitle:@"主页"];
+//    [self setNavBarLeftBtn:nil];
     
     
     
-    [self setNavBarTitle:@"主页"];
-    [self setNavBarLeftBtn:nil];
     
     
+    
+    
+    
+    leftTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.leftContentView.frame.size.width, self.leftContentView.frame.size.height-20)];
+    leftTableView.backgroundColor = [UIColor clearColor];
+    leftTableView.tableFooterView = leftTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    leftTableView.dataSource = self;
+    leftTableView.delegate = self;
+    [self.leftContentView addSubview:leftTableView];
+    
+    rightTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.leftContentView.frame.size.width, self.leftContentView.frame.size.height-20)];
+    rightTableView.backgroundColor = [UIColor clearColor];
+    rightTableView.tableFooterView = leftTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    rightTableView.dataSource = self;
+    rightTableView.delegate = self;
+    [self.rightContentView addSubview:rightTableView];
     
     
 }
+- (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize
 
-- (void)didReceiveMemoryWarning {
+{
+    UIGraphicsBeginImageContext(CGSizeMake(reSize.width, reSize.height));
+    [image drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return reSizeImage;
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    if (cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
+    }
+    
+    cell.textLabel.text = @"Item";
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self closeSideView:YES];
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

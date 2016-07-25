@@ -21,6 +21,7 @@
 		23609D461D42203900FA85F2 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D411D42203900FA85F2 /* MCLeftSlideViewController.m */; };
 		23609D471D42203900FA85F2 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D431D42203900FA85F2 /* UIView_extra.m */; };
 		23609D4D1D42253000FA85F2 /* MCLeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23609D4C1D42253000FA85F2 /* MCLeftSortsViewController.m */; };
+		236736E21D45A983001364F7 /* RNBlurredSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236736E11D45A983001364F7 /* RNBlurredSideViewController.m */; };
 		23905BD81D3F148C0013C227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23905BD71D3F148C0013C227 /* main.m */; };
 		23905BDB1D3F148C0013C227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23905BDA1D3F148C0013C227 /* AppDelegate.m */; };
 		23905BE11D3F148C0013C227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23905BDF1D3F148C0013C227 /* Main.storyboard */; };
@@ -78,6 +79,8 @@
 		23609D4A1D4222A100FA85F2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		23609D4B1D42253000FA85F2 /* MCLeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSortsViewController.h; sourceTree = "<group>"; };
 		23609D4C1D42253000FA85F2 /* MCLeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSortsViewController.m; sourceTree = "<group>"; };
+		236736E01D45A983001364F7 /* RNBlurredSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBlurredSideViewController.h; sourceTree = "<group>"; };
+		236736E11D45A983001364F7 /* RNBlurredSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBlurredSideViewController.m; sourceTree = "<group>"; };
 		23905BD31D3F148C0013C227 /* TotalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23905BD71D3F148C0013C227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23905BD91D3F148C0013C227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 		23609D1A1D406D3400FA85F2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				236736DF1D45A96B001364F7 /* LeftTwo */,
 				23609D3B1D42203900FA85F2 /* LeftSlideViewController */,
 				23609D1B1D406D4800FA85F2 /* tabbar */,
 			);
@@ -205,6 +209,15 @@
 				23609D4A1D4222A100FA85F2 /* PrefixHeader.pch */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		236736DF1D45A96B001364F7 /* LeftTwo */ = {
+			isa = PBXGroup;
+			children = (
+				236736E01D45A983001364F7 /* RNBlurredSideViewController.h */,
+				236736E11D45A983001364F7 /* RNBlurredSideViewController.m */,
+			);
+			name = LeftTwo;
 			sourceTree = "<group>";
 		};
 		23905BCA1D3F148C0013C227 = {
@@ -439,6 +452,7 @@
 				23609D281D406D4800FA85F2 /* STNavigationController.m in Sources */,
 				23609D461D42203900FA85F2 /* MCLeftSlideViewController.m in Sources */,
 				23609D341D40A97500FA85F2 /* WYCRightBayViewController.m in Sources */,
+				236736E21D45A983001364F7 /* RNBlurredSideViewController.m in Sources */,
 				23905BD81D3F148C0013C227 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "STChildViewController.h"
+#import "RNBlurredSideViewController.h"
 
-@interface WYCMainViewController : STChildViewController
+@interface WYCMainViewController : RNBlurredSideViewController//STChildViewController :
 
 @end
