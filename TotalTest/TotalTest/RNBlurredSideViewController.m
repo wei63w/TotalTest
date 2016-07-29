@@ -177,12 +177,12 @@
     self.centerContentView.backgroundColor = [UIColor clearColor];
     [mainScrollView addSubview:_centerContentView];
     
-    self.rightContentView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH+self.leftWidth, 0, self.rightWidth, SCREEN_HEIGHT)];
-    self.rightContentView.backgroundColor = [UIColor clearColor];
-    [mainScrollView addSubview:_rightContentView];
+//    self.rightContentView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH+self.leftWidth, 0, self.rightWidth, SCREEN_HEIGHT)];
+//    self.rightContentView.backgroundColor = [UIColor clearColor];
+//    [mainScrollView addSubview:_rightContentView];
     
     seperation = [[UILabel alloc] initWithFrame:CGRectMake(self.leftWidth+SCREEN_WIDTH, 0, 0.5, SCREEN_HEIGHT)];
-    seperation.backgroundColor = [UIColor whiteColor];
+//    seperation.backgroundColor = [UIColor whiteColor];
     seperation.alpha = 0.3;
     [mainScrollView addSubview:seperation];
     
@@ -235,13 +235,14 @@
         
     }
     else if (scrollView.contentOffset.x>self.leftWidth+self.rightWidth*4/5){
-        if (screenStatus == 0)
-            [self openRightView:YES];
+        if (screenStatus == 0){
+//         [self openRightView:YES];   
+        }
         else if (screenStatus != 2) {
             [self closeSideView:YES];
         }
         else{
-            [self openRightView:YES];
+//            [self openRightView:YES];
         }
     }
     else{
@@ -268,7 +269,7 @@
 	if ([scrollView isEqual:mainScrollView]){
         if (scrollView.contentOffset.x <= self.leftWidth){
             CGRect blurredRect = CGRectMake(0, 0, self.leftWidth-scrollView.contentOffset.x, SCREEN_HEIGHT);
-            //UIImage *croppedBlurredImage = [blurredImage croppedImage:blurredRect];
+//            UIImage *croppedBlurredImage = [blurredImage croppedImage:blurredRect];
             blurredImageView.frame = blurredRect;
             blurredImageView.contentMode = UIViewContentModeTopLeft;
             blurredOverlayView.frame = blurredImageView.frame;
@@ -278,14 +279,17 @@
             }
         }
         else if (scrollView.contentOffset.x >= self.leftWidth){
-            CGRect blurredRect = CGRectMake(SCREEN_WIDTH - (scrollView.contentOffset.x-self.leftWidth), 0, scrollView.contentOffset.x-self.leftWidth, SCREEN_HEIGHT);
-            blurredImageView.frame = blurredRect;
-            blurredImageView.contentMode = UIViewContentModeTopRight;
-            blurredOverlayView.frame = blurredImageView.frame;
-            if (self.dim){
-                backgroundView.alpha = DEFAULT_DIM_ALPHA+(1-DEFAULT_DIM_ALPHA)*(1-(scrollView.contentOffset.x-self.leftWidth)/self.rightWidth);
-                self.centerContentView.alpha = backgroundView.alpha;
-            }
+            /**
+             *  省去右边栏
+             */
+//            CGRect blurredRect = CGRectMake(SCREEN_WIDTH - (scrollView.contentOffset.x-self.leftWidth), 0, scrollView.contentOffset.x-self.leftWidth, SCREEN_HEIGHT);
+//            blurredImageView.frame = blurredRect;
+//            blurredImageView.contentMode = UIViewContentModeTopRight;
+//            blurredOverlayView.frame = blurredImageView.frame;
+//            if (self.dim){
+//                backgroundView.alpha = DEFAULT_DIM_ALPHA+(1-DEFAULT_DIM_ALPHA)*(1-(scrollView.contentOffset.x-self.leftWidth)/self.rightWidth);
+//                self.centerContentView.alpha = backgroundView.alpha;
+//            }
         }
         
     }

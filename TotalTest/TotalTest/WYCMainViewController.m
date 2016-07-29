@@ -35,9 +35,7 @@
     [navbar setLeftBtn:  nil];
     [navbar setTitle:@"首页"];
     [self.view addSubview:navbar];
-    
-//    [self setNavBarTitle:@"主页"];
-//    [self setNavBarLeftBtn:nil];
+
     
     
     
@@ -53,15 +51,22 @@
     leftTableView.delegate = self;
     [self.leftContentView addSubview:leftTableView];
     
-    rightTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.leftContentView.frame.size.width, self.leftContentView.frame.size.height-20)];
-    rightTableView.backgroundColor = [UIColor clearColor];
-    rightTableView.tableFooterView = leftTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    rightTableView.dataSource = self;
-    rightTableView.delegate = self;
-    [self.rightContentView addSubview:rightTableView];
+    
+    /**
+     省去右侧栏
+     */
+//    rightTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.leftContentView.frame.size.width, self.leftContentView.frame.size.height-20)];
+//    rightTableView.backgroundColor = [UIColor clearColor];
+//    rightTableView.tableFooterView = leftTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+//    rightTableView.dataSource = self;
+//    rightTableView.delegate = self;
+//    [self.rightContentView addSubview:rightTableView];
     
     
 }
+/**
+ *  修改图片大小
+ */
 - (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize
 
 {
