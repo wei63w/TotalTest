@@ -4,6 +4,7 @@
 一个 iOS 示例工程，使用 Xcode 打开即可查看。
 
 ## 目录
+- `README.md`
 - `TotalTest`
 
 ## 快速开始
